@@ -1,0 +1,14 @@
+Clock.propTypes = {
+    basicObject: PropTypes.object,
+  
+    numbers: PropTypes
+      .objectOf(PropTypes.numbers),
+  
+    messages: PropTypes
+      .instanceOf(Message),
+  
+    contactList: PropTypes.shape({
+      name: PropTypes.string,
+      phone: PropTypes.string,
+    })
+  }
